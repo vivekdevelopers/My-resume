@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(135deg, #f0f4ff, #fcecff); color: #333; }
+    header { background: linear-gradient(90deg, #6a11cb, #2575fc); color: white; padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+    nav { display: flex; justify-content: space-around; align-items: center; }
+    nav h1 { font-size: 1.8em; font-weight: 700; }
+    nav ul { display: flex; list-style: none; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+    nav ul li a:hover { color: #ffeb3b; }
+
+    section { padding: 60px 10%; }
+
+    #home { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 120vh; text-align: center; }
+    #home h1 { font-size: 3em; color: #222; }
+    #home p { font-size: 1.2em; margin-top: 10px; color: #555; }
+    #home a { background: linear-gradient(90deg, #ff6a00, #ee0979); color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; margin-top: 20px; transition: 0.3s; }
+    #home a:hover { opacity: 0.8; }
+
+
+    .card{ position: relative; width: 500px; height: auto;
+    border-radius: 50%; border: 5px solid black;
+   box-shadow: 0 0 50px 15px rgba(210, 64, 230, 0.6)}
+    
+     
+
+    #about, #projects, #experience, #education, #contact { background: white; margin: 40px 0; border-radius: 15px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+    #about h2, #projects h2, #experience h2, #education h2, #contact h2 { text-align: center; margin-bottom: 30px; color: #6a11cb; }
+
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .project { background: linear-gradient(135deg, #fff6e6, #f0f7ff); padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+    .project:hover { transform: translateY(-5px); }
+    .project img { width: 100%; border-radius: 8px; }
+
+    .link{ color: blue;}
+    .link:hover{ color: red;}
+
+    .details{margin: 10px; font-size: 17px; text-align: justify;}
+
+
+    #contact form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+    #contact input, #contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    #contact button { background: linear-gradient(90deg, #6a11cb, #2575fc); color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    #contact button:hover { background: linear-gradient(90deg, #ff6a00, #ee0979); }
+
+    footer { background: linear-gradient(90deg, #2575fc, #6a11cb); color: white; text-align: center; padding: 30px 15px; margin-top: 40px; }
+    footer a { color: #ffeb3b; text-decoration: none; margin: 0 10px; }
+    .social-links a { margin: 0 10px; font-size: 1.5em; color: white; transition: 0.3s; }
+    .social-links a:hover { color: #ffeb3b; }
+
+    @media (max-width: 768px) {
+      nav ul { flex-direction: column; background: #111; position: absolute; top: 60px; left: -100%; width: 100%; transition: 0.3s; }
+      nav ul.active { left: 0; }
+      nav .menu-toggle { display: block; cursor: pointer; font-size: 1.5em; }
+    }
+    .menu-toggle { display: none; color: white; }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+                      <!--Home Section-->
+  <section id="home">
+      <h1>Hello, I'm Vivek Vishwakarma</h1>
+      <img src="pic1.jpg" class="card">
+       
+     <p class="text">A passionate Softwere Developer & Web Designer.</p>
+     <a href="RESUME1.pdf" download="">Download Resume</a>
+    
+    
+  </section>
+
+                  <!--About Section-->
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="details">
+      Hello! I'm Vivek Vishwakarma , blong to Mirzapur. I'm pursuing my BCA (Bachelor Of Compurter Applications).
+      I'm interested in <b>Softwere Development and Web Designing</b>I have learn  Programming Languages like 
+      C , C++ Java Pyton , HTML , CSS , JavaScript , PHP and MySQL etc. 
+      My short term goal is  Web Designer And long term goal is to become a Softwere Developer
+       in the future.
+      My hobies are Teaching and work in new Ideas.
+    </p>
+  </section>
+
+                 <!--Education Section-->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      <ul  class="details">
+        <li> <b>High School  : </b> Passed form Amrawati Intermediate College Bandhwa Jamua Bazar Mirzapur, UP Board in 2020. </li>
+        <li> <b>Intermediate :</b> Paaed from Shree Gandhi Vidhyaly Intermediate College Kachhawa Bazar Mirzapur, UP Borad in 2022 </li>
+        <li> <b>Advance Deploma in Computer Applications : </b> from Edutech Computer Institute.</li>
+        <li> <b>Bachelor Of Computer Application (BCA) :</b> Passed from Maharaj Balwant Singh PG College.
+          Rajatalab(Gangapur) Varanasi 
+          Affliated to Mahatma Gandhi Kashi Vidyapith in 2023 to 2025  
+        </li>
+      </ul>
+    </p>
+  </section>
+
+
+              <!--Project Section-->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Calculator</h3>
+        <p>A responsive Calculator built with HTML, CSS, and Js.</p>
+        <a href="#" class="link">View Project</a>
+      </div>
+
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase skills and projects.</p>
+        <a href="#" class="link">View Project</a>
+      </div>
+
+      <div class="project">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Eat Right Food</h3>
+        <p>College Project using html css & js fronted  , backend used to PHP & MySQL</p>
+        <a href="#" class="link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+                <!--Experience Section-->
+  <section id="experience">
+    <h2>Experience</h2>
+    <p class="details">
+     <q> Currently gainging practical experience through personal projects and 
+      continuous learing in Web Development
+     </q>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message  (not connect to database plz.send msg insta of fb)" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+                      <!--Footer Section-->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/17D7kYbXmm/" target="_blank"><i class="fab fa-facebook"></i></a>
+     <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>-->
+      <a href="https://www.instagram.com/complex_vivek?igsh=dXB5aTN6dzJ3ZG9u" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!--  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>-->
+      <a href="https://github.com/vivekdevelopers" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Vivek Vishwakarma | Designed with ❤️ by Me | <a href="#home">Back to top</a></p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
